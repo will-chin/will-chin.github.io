@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Sports webpage</title>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>Project: Sports Webpage</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-            <h1>NBA Players</h1>
-            <p>Meet the All Stars</p>
-            <img src="klay1.png" alt="Klay Thompson" width="200"/>
-            <img src="stephshooting.jpg" alt="Stephen Curry" width"100"/>    
-    </body>
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        </style>
+</head>
+<body>
+
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+
+
+
+
+
+
+
+
+</head>
+<body style=" background-color:lightcyan;">
+
+<h1 style="font-family:verdana;">NBA News</h1>
+<p>Keeping You in The Loop</p>
+<a href ="http://www.espn.com/nba/scoreboard">NBA Boxscores</a>
+<a href ="https://www.cbssports.com/nba/injuries/">Current Injuries</a>
+<div></div>
+<img src="stephshooting.jpg" alt="Stephen Curry" width="1000"/>
+
+
+
+
+</body>
 </html>
