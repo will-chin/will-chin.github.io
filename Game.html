@@ -9,7 +9,7 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
+
             background-color: #333;
         }
 
@@ -30,19 +30,67 @@
         }
 
         .active {
+
+
+            background-color: #4CAF50;}
+        .dropbtn {
             background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
     </style>
   </head>
-  <body>
+  <body  style=" background-color:orangered;">
+
   <ul>
+      <div class="dropdown">
+          <button class="dropbtn" >Dropdown
+
+          </button>
+          <div class="dropdown-content">
+              <a href="Frying.html">Frying</a>
+              <a href="Mondriaan.html">Mondriaan</a>
+              <a href="Art.html">Orbit</a>
+          </div>
+      </div>
       <li><a href="index.html">Home</a></li>
-      <li><a href="Urgent.html">Urgent News</a></li>
-     
+      <li><a href="Gamelife.html">Game of Life</a></li>
+
       <li><a href="Game.html">Games</a></li>
-      <li style="float:right"><a class="active" href="#about">About</a></li>
+
+      <li style="float:right"><a class="active" href="#about">Art</a></li>
   </ul>
 
-  <h1>If health bar drains, you die, and half of the universe also dies!</h1>
+  <h1>Will's Cool Avengers Game!</h1>
     <script src="sketch.js"></script>
   
 
